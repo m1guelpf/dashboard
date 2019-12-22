@@ -4,19 +4,22 @@ namespace App\Events\Statistics;
 
 use App\Events\DashboardEvent;
 
-class GitHubTotalsFetched extends DashboardEvent
+class FathomTotalsFetched extends DashboardEvent
 {
     /** @var int */
-    public $stars;
+    public $uniqueVisitors;
 
     /** @var int */
-    public $issues;
+    public $pageviews;
 
     /** @var int */
-    public $pullRequests;
+    public $avgTime;
 
     /** @var int */
-    public $contributors;
+    public $bounceRate;
+
+    /** @var int */
+    public $currentVisitors;
 
     public function __construct(array $totals)
     {

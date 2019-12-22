@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Events\TeamMember;
+namespace App\Events\TickTick;
 
 use App\Events\DashboardEvent;
 

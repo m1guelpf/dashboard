@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "73ba31f401a2bd678c759919828877d6",
+    "content-hash": "66fe51e7297b22ddb7b073725ecf9b17",
     "packages": [
         {
             "name": "barryvdh/laravel-ide-helper",
@@ -1888,6 +1888,52 @@
             "time": "2019-01-14T23:55:14+00:00"
         },
         {
+            "name": "kitetail/zttp",
+            "version": "v0.6.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kitetail/zttp.git",
+                "reference": "92662d7f9025b4c9a0b8a585e31810461fcca435"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kitetail/zttp/zipball/92662d7f9025b4c9a0b8a585e31810461fcca435",
+                "reference": "92662d7f9025b4c9a0b8a585e31810461fcca435",
+                "shasum": ""
+            },
+            "require": {
+                "guzzlehttp/guzzle": "^6.0",
+                "php": ">=7.0",
+                "tightenco/collect": "^5.4"
+            },
+            "require-dev": {
+                "laravel/lumen-framework": "5.5.*",
+                "phpunit/phpunit": "^6.0"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "src/Zttp.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Adam Wathan",
+                    "email": "adam.wathan@gmail.com"
+                }
+            ],
+            "description": "A developer-experience focused HTTP client, optimized for most common use cases.",
+            "keywords": [
+                "Guzzle",
+                "http"
+            ],
+            "time": "2019-06-10T12:18:52+00:00"
+        },
+        {
             "name": "knplabs/github-api",
             "version": "2.11.0",
             "source": {
@@ -2163,6 +2209,61 @@
             "time": "2019-08-07T15:10:45+00:00"
         },
         {
+            "name": "lcobucci/jwt",
+            "version": "3.3.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/lcobucci/jwt.git",
+                "reference": "a11ec5f4b4d75d1fcd04e133dede4c317aac9e18"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/lcobucci/jwt/zipball/a11ec5f4b4d75d1fcd04e133dede4c317aac9e18",
+                "reference": "a11ec5f4b4d75d1fcd04e133dede4c317aac9e18",
+                "shasum": ""
+            },
+            "require": {
+                "ext-mbstring": "*",
+                "ext-openssl": "*",
+                "php": "^5.6 || ^7.0"
+            },
+            "require-dev": {
+                "mikey179/vfsstream": "~1.5",
+                "phpmd/phpmd": "~2.2",
+                "phpunit/php-invoker": "~1.1",
+                "phpunit/phpunit": "^5.7 || ^7.3",
+                "squizlabs/php_codesniffer": "~2.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Lcobucci\\JWT\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Luís Otávio Cobucci Oblonczyk",
+                    "email": "lcobucci@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A simple library to work with JSON Web Token and JSON Web Signature",
+            "keywords": [
+                "JWS",
+                "jwt"
+            ],
+            "time": "2019-05-24T18:30:49+00:00"
+        },
+        {
             "name": "league/flysystem",
             "version": "1.0.55",
             "source": {
@@ -2245,6 +2346,63 @@
                 "storage"
             ],
             "time": "2019-08-24T11:17:19+00:00"
+        },
+        {
+            "name": "m1guelpf/netlify-mix",
+            "version": "v0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/m1guelpf/netlify-mix.git",
+                "reference": "9c3d0da8c52017e39d49cc2a19510f2a11e948f3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/m1guelpf/netlify-mix/zipball/9c3d0da8c52017e39d49cc2a19510f2a11e948f3",
+                "reference": "9c3d0da8c52017e39d49cc2a19510f2a11e948f3",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "5.8.*|^6.0",
+                "lcobucci/jwt": "^3.3",
+                "php": "^7.1"
+            },
+            "require-dev": {
+                "orchestra/testbench": "3.8.*",
+                "phpunit/phpunit": "^7.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "M1guelpf\\NetlifyMix\\NetlifyMixServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "M1guelpf\\NetlifyMix\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Miguel Piedrafita",
+                    "email": "soy@miguelpiedrafita.com",
+                    "homepage": "https://miguelpiedrafita.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Use Netlify as a CDN for your Laravel Mix assets",
+            "homepage": "https://github.com/m1guelpf/netlify-mix",
+            "keywords": [
+                "laravel-mix",
+                "m1guelpf",
+                "netlify"
+            ],
+            "time": "2019-09-04T09:24:11+00:00"
         },
         {
             "name": "monolog/monolog",
@@ -6557,6 +6715,56 @@
                 "dump"
             ],
             "time": "2019-08-26T08:26:39+00:00"
+        },
+        {
+            "name": "tightenco/collect",
+            "version": "v5.8.35",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/tightenco/collect.git",
+                "reference": "c93a7039e6207ad533a09109838fe80933fcc72c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/tightenco/collect/zipball/c93a7039e6207ad533a09109838fe80933fcc72c",
+                "reference": "c93a7039e6207ad533a09109838fe80933fcc72c",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.1.3",
+                "symfony/var-dumper": ">=3.4 <5"
+            },
+            "require-dev": {
+                "mockery/mockery": "^1.0",
+                "nesbot/carbon": "^1.26.3",
+                "phpunit/phpunit": "^7.0"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "src/Collect/Support/helpers.php",
+                    "src/Collect/Support/alias.php"
+                ],
+                "psr-4": {
+                    "Tightenco\\Collect\\": "src/Collect"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylorotwell@gmail.com"
+                }
+            ],
+            "description": "Collect - Illuminate Collections as a separate package.",
+            "keywords": [
+                "collection",
+                "laravel"
+            ],
+            "time": "2019-09-17T18:57:01+00:00"
         },
         {
             "name": "tijsverkoyen/css-to-inline-styles",
